@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroPage">
+
+    <TextView
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigation Guide"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:freezesText="true"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/pink"/>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_below="@id/guide"
+    >
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/yellow"
+        android:freezesText="true"
+        android:gravity="center"
+        android:onClick="send1"
+        android:text="New York Map" />
+
+    <Button
+        android:id="@+id/movieList"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Movie List"
+        android:background="@color/yellow"
+        android:freezesText="true"
+        android:layout_marginTop="30dp"
+        android:onClick="send2"
+        android:layout_below="@id/map"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/travelPlan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Your Travel Plan"
+        android:background="@color/yellow"
+        android:freezesText="true"
+        android:layout_marginTop="30dp"
+        android:onClick="send3"
+        android:gravity="center"
+        android:layout_below="@id/movieList"/>
+
+    <Button
+        android:id="@+id/Share"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Share Picture With Others"
+        android:background="@color/yellow"
+        android:freezesText="true"
+        android:layout_marginTop="30dp"
+        android:onClick="send4"
+        android:gravity="center"
+        android:layout_below="@id/travelPlan"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+        
+        
+
+
+</RelativeLayout>
