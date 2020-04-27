@@ -92,7 +92,7 @@ public class MapsActivity extends AppCompatActivity implements
         public void onInfoWindowClick (Marker marker){
 
             if (marker.getTitle().equals("Joker(2019)")) {
-                Intent intent = new Intent(this, MovieInfo.class);
+                Intent intent = new Intent(this, MovieList.class);
                 startActivity(intent);
                 Toast.makeText(this, "HAHAHA", Toast.LENGTH_SHORT).show();
             } else {
