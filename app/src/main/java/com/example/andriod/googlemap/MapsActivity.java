@@ -3,6 +3,7 @@ package com.example.andriod.googlemap;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -80,19 +81,26 @@ public class MapsActivity extends AppCompatActivity implements
                 .title("Travel with Film")
                 .snippet("Explore New york with iconic movies"));
         melbourne.showInfoWindow();
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(mark1));
+
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mark1, 12));
         mMap.setOnInfoWindowClickListener(this);
 
+
 }
-    @Override
-    public void onInfoWindowClick(Marker marker) {
-        Toast.makeText(this, "OK", Toast.LENGTH_SHORT).show();
-        if (marker.getTitle().equals("Joker(2019)")) {
-            Intent intent = new Intent(this, IntroPage.class);
-            startActivity(intent);
+
+
+
+        @Override
+        public void onInfoWindowClick (Marker marker){
+
+            if (marker.getTitle().equals("Joker(2019)")) {
+                Intent intent = new Intent(this, MovieList.class);
+                startActivity(intent);
+                Toast.makeText(this, "HAHAHA", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "OK", Toast.LENGTH_SHORT).show();
+            }
         }
-    }
 
 
 }

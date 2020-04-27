@@ -17,7 +17,7 @@ public class IntroPage extends AppCompatActivity {
     }
 
     public void send1(View view){
-        Intent intent = new Intent(this, Map.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
 
