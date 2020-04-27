@@ -29,7 +29,6 @@ public class MapsActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -84,7 +83,6 @@ public class MapsActivity extends AppCompatActivity implements
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mark1, 12));
         mMap.setOnInfoWindowClickListener(this);
-
 
 }
 
