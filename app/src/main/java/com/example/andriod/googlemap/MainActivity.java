@@ -52,6 +52,6 @@ public class MainActivity extends AppCompatActivity {
     public void GoToMap(View view){
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
-        Toast.makeText(this, "HAHAHA", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Enter the Map", Toast.LENGTH_SHORT).show();
     }
 }
