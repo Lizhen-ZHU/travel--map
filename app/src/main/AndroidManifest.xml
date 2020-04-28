@@ -33,10 +33,11 @@
         <activity android:name=".MovieList" />
 
         <activity android:name=".IntroPage" />
-
+        <activity android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"/>
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:name=".MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
